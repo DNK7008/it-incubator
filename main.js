@@ -16,10 +16,11 @@ while (isSunk === false) {
   guess = +prompt("Введите предположительное местонахождение корабля, цифры от 0 до 6")
   if (guess === location1 || guess === location2 || guess === location3) {
     alert("HIT!!!");
-    count = count + 1;
-
+    // считаем попадания
+    hits = hits + 1;
     if (count === 3) {
-      alert("You win!");
+      isSunk = true;
+      alert("You sunk my battle ship!");
     }
 
   } else {
