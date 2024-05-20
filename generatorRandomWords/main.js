@@ -12,5 +12,5 @@ function indexGet(wordsArray) {
   return wordsArray[indexRandom];
 }
 
-console.log(makePhrases(words_1, words_2, words_3));
+// console.log(makePhrases(words_1, words_2, words_3));
 alert(makePhrases(words_1, words_2, words_3));
